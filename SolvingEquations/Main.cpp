@@ -1,0 +1,16 @@
+#include "Main.h"
+
+using namespace System;
+using namespace System::Windows::Forms;
+using namespace MainForm;
+
+[STAThreadAttribute]
+int main(array<String^>^ args)
+{
+    Application::EnableVisualStyles();
+    Application::SetCompatibleTextRenderingDefault(false);
+    Application::Run(gcnew Form1());
+
+    return 0;
+}
+
