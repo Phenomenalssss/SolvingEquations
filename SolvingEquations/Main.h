@@ -782,6 +782,7 @@ namespace MainForm {
 		ValueX4->ReadOnly = true;
 		ValueX5->ReadOnly = true;
 		Degree->ReadOnly = true;
+		Degree->Enabled = false;
 	};
 
 	private: System::Void CanPaintChart()
@@ -1508,6 +1509,8 @@ namespace MainForm {
 		FromChart->Clear();
 		ToChart->Clear();
 		chartIsPaint = false;
+		Degree->Enabled = true;
+		Degree->ReadOnly = false;
 	}
 
 	private: System::Void PaintChart_Click(System::Object^ sender, System::EventArgs^ e)
